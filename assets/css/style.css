@@ -1,0 +1,54 @@
+/* Simple, clean color palette */
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+
+    .navbar-brand span {
+      font-weight: 700;
+    }
+
+    .hero-title {
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: #6c757d;
+    }
+
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 1rem 1.25rem;
+      border-radius: 0.5rem;
+    }
+
+    .carousel-caption h5 {
+      font-weight: 600;
+    }
+
+    .site-description {
+      max-width: 720px;
+      margin: 2.5rem auto 3rem;
+    }
+
+    footer {
+      background-color: #212529;
+      color: #f8f9fa;
+    }
+
+    footer a {
+      color: #f8f9fa;
+    }
+
+    footer a:hover {
+      color: #ffc107;
+    }
+
+    /* Small tweak so images keep a nice hero height */
+    .hero-carousel img {
+      max-height: 420px;
+      object-fit: cover;
+    }
