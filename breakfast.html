@@ -207,6 +207,51 @@
         </div>
       </div>
     </div>
+
+    <!-- Eggnog French Toast modal showing ingredients and instructions -->
+    <div class="modal fade" id="frenchToastModal" tabindex="-1" aria-labelledby="frenchToastModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="frenchToastModalLabel">Eggnog French Toast</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img src="assets/images/frenchtoast.png" class="img-fluid rounded" alt="Eggnog French Toast">
+              </div>
+              <div class="col-md-7">
+                <h6 class="fw-bold">Ingredients</h6>
+                <ul class="mb-3">
+                  <li>6 slices thick bread (brioche or challah)</li>
+                  <li>¾ cup eggnog</li>
+                  <li>2 eggs</li>
+                  <li>½ tsp cinnamon</li>
+                  <li>¼ tsp nutmeg</li>
+                  <li>1 tsp vanilla extract</li>
+                  <li>Butter for cooking</li>
+                  <li>Powdered sugar (optional)</li>
+                </ul>
+
+                <h6 class="fw-bold">Instructions</h6>
+                <ol class="mb-0">
+                  <li>Whisk eggnog, eggs, cinnamon, nutmeg, and vanilla in a shallow bowl.</li>
+                  <li>Heat a skillet over medium heat and melt butter.</li>
+                  <li>Dip each bread slice in the mixture, coating both sides.</li>
+                  <li>Cook 2–3 minutes per side until golden brown.</li>
+                  <li>Repeat with remaining slices, adding butter as needed.</li>
+                  <li>Serve warm with powdered sugar, maple syrup, or berries.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     -->
     <main class="container my-4">
         <!-- Page title and intro -->
@@ -268,7 +313,7 @@
               <span class="badge bg-primary">Weekend</span>
               <span class="badge bg-light text-dark border">30 min</span>
             </p>
-            <a href="recipe-egg-muffins.html" class="btn btn-sm btn-warning mt-auto">View recipe</a>
+                <a class="btn btn-sm btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#frenchToastModal">View recipe</a>
             </div>
           </div>
           </article>
