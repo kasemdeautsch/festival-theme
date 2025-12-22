@@ -106,6 +106,57 @@
             </div>
         </div>
     </main>
+
+    <!-- Gingerbread Pancakes modal showing ingredients and instructions -->
+    <div class="modal fade" id="gingerbreadModal" tabindex="-1" aria-labelledby="gingerbreadModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="gingerbreadModalLabel">Gingerbread Pancakes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img src="assets/images/gingerbread.png" class="img-fluid rounded" alt="Gingerbread Pancakes">
+              </div>
+              <div class="col-md-7">
+                <h6 class="fw-bold">Ingredients</h6>
+                <ul class="mb-3">
+                  <li>1 cup all-purpose flour</li>
+                  <li>1 tbsp brown sugar</li>
+                  <li>1 tsp baking powder</li>
+                  <li>½ tsp baking soda</li>
+                  <li>1 tsp ground ginger</li>
+                  <li>1 tsp ground cinnamon</li>
+                  <li>¼ tsp ground cloves</li>
+                  <li>¼ tsp salt</li>
+                  <li>1 cup buttermilk (or milk + 1 tsp vinegar)</li>
+                  <li>1 egg</li>
+                  <li>2 tbsp melted butter</li>
+                  <li>1 tsp vanilla extract</li>
+                  <li>Maple syrup (for serving)</li>
+                </ul>
+
+                <h6 class="fw-bold">Instructions</h6>
+                <ol class="mb-0">
+                  <li>Whisk flour, brown sugar, baking powder, baking soda, spices, and salt.</li>
+                  <li>Mix buttermilk, egg, melted butter, and vanilla in another bowl.</li>
+                  <li>Pour wet into dry and stir gently until just combined.</li>
+                  <li>Heat a greased nonstick skillet over medium heat.</li>
+                  <li>Portion ¼ cup batter per pancake.</li>
+                  <li>Cook until bubbles form, flip, and cook until golden.</li>
+                  <li>Serve warm with maple syrup and a sprinkle of powdered sugar.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     -->
     <main class="container my-4">
         <!-- Page title and intro -->
@@ -131,7 +182,7 @@
               <span class="badge bg-warning text-dark">Festive</span>
               <span class="badge bg-light text-dark border">15 min</span>
             </p>
-            <a href="recipe-pancakes.html" class="btn btn-sm btn-warning mt-auto">View recipe</a>
+                <a class="btn btn-sm btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#gingerbreadModal">View recipe</a>
             </div>
           </div>
           </article>
