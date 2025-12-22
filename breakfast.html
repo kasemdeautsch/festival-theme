@@ -157,6 +157,56 @@
         </div>
       </div>
     </div>
+
+    <!-- Cranberry Orange Baked Oatmeal modal showing ingredients and instructions -->
+    <div class="modal fade" id="cranberryModal" tabindex="-1" aria-labelledby="cranberryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cranberryModalLabel">Cranberry Orange Baked Oatmeal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img src="assets/images/cranberrybaked.png" class="img-fluid rounded" alt="Cranberry Orange Baked Oatmeal">
+              </div>
+              <div class="col-md-7">
+                <h6 class="fw-bold">Ingredients</h6>
+                <ul class="mb-3">
+                  <li>2 cups rolled oats</li>
+                  <li>½ cup fresh or dried cranberries</li>
+                  <li>Zest of 1 orange</li>
+                  <li>½ tsp cinnamon</li>
+                  <li>¼ tsp nutmeg</li>
+                  <li>½ tsp baking powder</li>
+                  <li>¼ tsp salt</li>
+                  <li>1½ cups milk</li>
+                  <li>¼ cup maple syrup or honey</li>
+                  <li>1 egg</li>
+                  <li>2 tbsp melted butter or coconut oil</li>
+                  <li>1 tsp vanilla extract</li>
+                </ul>
+
+                <h6 class="fw-bold">Instructions</h6>
+                <ol class="mb-0">
+                  <li>Preheat oven to 375°F (190°C) and grease a baking dish.</li>
+                  <li>Combine oats, cranberries, orange zest, cinnamon, nutmeg, baking powder, and salt.</li>
+                  <li>Whisk milk, maple syrup, egg, butter, and vanilla in another bowl.</li>
+                  <li>Pour wet mixture over dry ingredients and stir to combine.</li>
+                  <li>Transfer mixture to the prepared baking dish.</li>
+                  <li>Bake 35–40 minutes until set and lightly golden.</li>
+                  <li>Cool slightly; serve with yogurt or extra maple syrup.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     -->
     <main class="container my-4">
         <!-- Page title and intro -->
@@ -200,7 +250,7 @@
               <span class="badge bg-success">Wholesome</span>
               <span class="badge bg-light text-dark border">Make ahead</span>
             </p>
-            <a href="recipe-overnight-oats.html" class="btn btn-sm btn-warning mt-auto">View recipe</a>
+                <a class="btn btn-sm btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#cranberryModal">View recipe</a>
             </div>
           </div>
           </article>
