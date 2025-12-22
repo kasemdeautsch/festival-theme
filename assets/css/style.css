@@ -1,54 +1,264 @@
-/* Simple, clean color palette */
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background-color: #f8f9fa;
-      color: #212529;
-    }
+/* Festive Holiday Color Palette */
+:root {
+  --festive-green: #5d7c56;
+  --festive-dark-green: #4a6347;
+  --festive-gold: #d4a574;
+  --festive-light-bg: #f5f0e8;
+  --festive-cream: #faf8f5;
+  --festive-brown: #8b7355;
+  --festive-text: #3d3d3d;
+}
 
-    .navbar-brand span {
-      font-weight: 700;
-    }
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: var(--festive-light-bg);
+  color: var(--festive-text);
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(212, 165, 116, 0.1) 0%, transparent 50%);
+}
 
-    .hero-title {
-      font-size: 2.4rem;
-      font-weight: 700;
-    }
+/* Navbar Styling - Green Theme */
+.navbar {
+  background: linear-gradient(135deg, var(--festive-green) 0%, var(--festive-dark-green) 100%) !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1) !important;
+  padding: 1rem 0;
+}
 
-    .hero-subtitle {
-      font-size: 1.1rem;
-      color: #6c757d;
-    }
+.navbar-brand {
+  color: #fff !important;
+  font-family: 'Brush Script MT', cursive, Georgia, serif;
+  font-size: 1.8rem !important;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
 
-    .carousel-caption {
-      background: rgba(0, 0, 0, 0.45);
-      padding: 1rem 1.25rem;
-      border-radius: 0.5rem;
-    }
+.navbar-brand i {
+  color: var(--festive-gold);
+  font-size: 1.5rem;
+}
 
-    .carousel-caption h5 {
-      font-weight: 600;
-    }
+.navbar-brand span {
+  font-weight: 400;
+}
 
-    .site-description {
-      max-width: 720px;
-      margin: 2.5rem auto 3rem;
-    }
+.nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem !important;
+}
 
-    footer {
-      background-color: #212529;
-      color: #f8f9fa;
-    }
+.nav-link:hover,
+.nav-link.active {
+  color: var(--festive-gold) !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
 
-    footer a {
-      color: #f8f9fa;
-    }
+.dropdown-menu {
+  background-color: var(--festive-dark-green);
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
-    footer a:hover {
-      color: #ffc107;
-    }
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
 
-    /* Small tweak so images keep a nice hero height */
-    .hero-carousel img {
-      max-height: 420px;
-      object-fit: cover;
-    }
+.dropdown-item:hover {
+  background-color: var(--festive-green);
+  color: var(--festive-gold);
+}
+
+/* Hero Section */
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--festive-brown);
+  font-family: Georgia, serif;
+  letter-spacing: 1px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--festive-text);
+  font-style: italic;
+  font-family: Georgia, serif;
+}
+
+/* Buttons */
+.btn-outline-success {
+  border-color: var(--festive-gold) !important;
+  color: var(--festive-gold) !important;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--festive-gold) !important;
+  border-color: var(--festive-gold) !important;
+  color: var(--festive-dark-green) !important;
+}
+
+.btn-warning {
+  background-color: var(--festive-green) !important;
+  border-color: var(--festive-green) !important;
+  color: #fff !important;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: var(--festive-dark-green) !important;
+  border-color: var(--festive-dark-green) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(93, 124, 86, 0.3);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  border-radius: 0;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: var(--festive-brown);
+  font-family: Georgia, serif;
+  font-weight: 600;
+}
+
+.card-text {
+  color: var(--festive-text);
+  font-family: system-ui, sans-serif;
+}
+
+/* Badges */
+.badge {
+  padding: 0.5rem 0.8rem;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.bg-warning {
+  background-color: var(--festive-gold) !important;
+}
+
+.bg-success {
+  background-color: var(--festive-green) !important;
+}
+
+.bg-primary {
+  background-color: var(--festive-brown) !important;
+}
+
+.bg-info {
+  background-color: #7c9885 !important;
+}
+
+.bg-danger {
+  background-color: #a0635f !important;
+}
+
+/* Search Bar */
+.form-control {
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: var(--festive-gold);
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(212, 165, 116, 0.25);
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.carousel-caption h5 {
+  font-weight: 600;
+}
+
+.site-description {
+  max-width: 720px;
+  margin: 2.5rem auto 3rem;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, var(--festive-dark-green) 0%, #3d5139 100%);
+  color: #fff;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--festive-gold);
+}
+
+footer i {
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+footer i:hover {
+  color: var(--festive-gold);
+  transform: scale(1.2);
+}
+
+/* Small tweak so images keep a nice hero height */
+.hero-carousel img {
+  max-height: 420px;
+  object-fit: cover;
+}
+
+/* Hero Section Background */
+.hero {
+  background: linear-gradient(to bottom, var(--festive-cream) 0%, var(--festive-light-bg) 100%);
+  border-bottom: 3px solid var(--festive-gold);
+}
+
+/* Display headings */
+.display-4 {
+  font-family: Georgia, serif;
+  color: var(--festive-brown);
+  font-weight: 400;
+}
+
+.lead {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: var(--festive-text);
+}
