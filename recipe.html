@@ -85,6 +85,58 @@
     </nav>
   </header>
 
+  <!-- Modal for Festive Herb-Roasted Turkey -->
+  <div class="modal fade" id="turkeyModal" tabindex="-1" aria-labelledby="turkeyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="turkeyModalLabel">🎄 Festive Herb-Roasted Turkey</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <div class="col-md-12">
+              <h6 class="fw-bold">🛒 Ingredients</h6>
+              <ul>
+                <li>1 whole turkey (10–12 lbs), thawed</li>
+                <li>½ cup unsalted butter, softened</li>
+                <li>3 cloves garlic, minced</li>
+                <li>1 tbsp fresh rosemary, chopped</li>
+                <li>1 tbsp fresh thyme, chopped</li>
+                <li>1 tbsp fresh sage, chopped</li>
+                <li>1 tsp salt</li>
+                <li>½ tsp black pepper</li>
+                <li>1 lemon, halved</li>
+                <li>1 onion, quartered</li>
+                <li>2 cups chicken or turkey broth</li>
+                <li>Optional: carrots, celery, and onion for roasting pan</li>
+              </ul>
+              
+              <h6 class="fw-bold mt-4">👩‍🍳 Instructions</h6>
+              <ol class="mb-0">
+                <li>Preheat oven to 325°F (165°C). Pat the turkey dry with paper towels.</li>
+                <li>In a small bowl, mix butter, garlic, rosemary, thyme, sage, salt, and pepper.</li>
+                <li>Gently loosen the skin over the turkey breast and rub half of the butter mixture underneath the skin.</li>
+                <li>Rub the remaining butter all over the outside of the turkey.</li>
+                <li>Stuff the turkey cavity with lemon halves and onion quarters.</li>
+                <li>Place turkey on a roasting rack in a pan. Add broth and optional vegetables to the bottom of the pan.</li>
+                <li>Roast uncovered, basting occasionally, for 2½–3 hours, or until the internal temperature reaches 165°F (74°C).</li>
+                <li>Remove turkey from oven and let rest for 20 minutes before carving.</li>
+              </ol>
+
+              <div class="alert alert-info mt-4 mb-0">
+                <strong>✨ Serving Tip:</strong> Garnish with fresh herbs, cranberry sauce, and roasted vegetables for a festive presentation.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- MAIN CONTENT -->
   <main class="container my-4">
     <!-- Breakfast Section -->
@@ -173,7 +225,7 @@
       <section class="mb-4 text-center">
         <h2 class="h3">Lunch Recipes</h2>
         <p class="text-muted">
-          Quick and satisfying lunch ideas for busy weekdays or leisurely afternoons.
+          Memorable midday meals that are hearty, flavorful, and perfect for any occasion.
         </p>
       </section>
 
@@ -181,17 +233,17 @@
         <!-- Lunch Recipe 1 -->
         <article class="col">
           <div class="card h-100">
-            <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg" class="card-img-top" alt="Lunch Recipe">
+            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Festive Herb-Roasted Turkey">
             <div class="card-body d-flex flex-column">
-              <h2 class="h5 card-title">Lunch Recipe 1</h2>
+              <h2 class="h5 card-title">🎄 Festive Herb-Roasted Turkey</h2>
               <p class="card-text">
-                Delicious and nutritious lunch option perfect for any day.
+                A beautifully roasted turkey infused with fresh herbs, perfect for holiday gatherings and special celebrations.
               </p>
               <p class="text-muted small mb-2">
-                <span class="badge bg-info">Medium</span>
-                <span class="badge bg-light text-dark border">30 min</span>
+                <span class="badge bg-warning text-dark">Festive</span>
+                <span class="badge bg-light text-dark border">2½–3 hours</span>
               </p>
-              <a href="#" class="btn btn-sm btn-warning mt-auto" onclick="showRecipeDetail('Lunch Recipe 1', 'lunch')">View recipe</a>
+              <a class="btn btn-sm btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#turkeyModal">View recipe</a>
             </div>
           </div>
         </article>
@@ -203,13 +255,9 @@
             <div class="card-body d-flex flex-column">
               <h2 class="h5 card-title">Lunch Recipe 2</h2>
               <p class="card-text">
-                A refreshing salad or main dish for a lighter lunch experience.
+                Coming soon...
               </p>
-              <p class="text-muted small mb-2">
-                <span class="badge bg-success">Healthy</span>
-                <span class="badge bg-light text-dark border">20 min</span>
-              </p>
-              <a href="#" class="btn btn-sm btn-warning mt-auto" onclick="showRecipeDetail('Lunch Recipe 2', 'lunch')">View recipe</a>
+              <a class="btn btn-sm btn-warning mt-auto disabled">View recipe</a>
             </div>
           </div>
         </article>
@@ -221,13 +269,12 @@
             <div class="card-body d-flex flex-column">
               <h2 class="h5 card-title">Lunch Recipe 3</h2>
               <p class="card-text">
-                Hearty and filling lunch ideas for those with bigger appetites.
+                Coming soon...
               </p>
-              <p class="text-muted small mb-2">
-                <span class="badge bg-warning text-dark">Filling</span>
-                <span class="badge bg-light text-dark border">35 min</span>
-              </p>
-              <a href="#" class="btn btn-sm btn-warning mt-auto" onclick="showRecipeDetail('Lunch Recipe 3', 'lunch')">View recipe</a>
+              <a class="btn btn-sm btn-warning mt-auto disabled">View recipe</a>
+            </div>
+          </div>
+        </article>
             </div>
           </div>
         </article>
