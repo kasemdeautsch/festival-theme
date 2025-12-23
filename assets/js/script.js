@@ -20,8 +20,9 @@ if (searchForm && searchInput) {
 
     const query = searchInput.value.trim().toLowerCase();
 
-    if (!query) {
-      alert("Please enter a recipe name to search.");
+    // If empty or just "recipe", go to recipe page showing breakfast
+    if (!query || query === "recipe" || query === "recipes") {
+      window.location.href = "recipe.html#breakfast";
       return;
     }
 
@@ -32,7 +33,8 @@ if (searchForm && searchInput) {
     );
 
     if (!match) {
-      alert("Sorry, recipe not found. Try: pancakes, oatmeal, french toast, turkey, cake, cheesecake, or cookies.");
+      // If no match, still go to recipe page
+      window.location.href = "recipe.html#breakfast";
       return;
     }
 
