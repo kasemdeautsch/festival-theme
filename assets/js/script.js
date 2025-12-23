@@ -1,6 +1,6 @@
 // Simple search logic in JavaScript
 
-// Example recipe names (in a real project, this would come from your backend)
+// Example recipe names (in a real project, comes from backend)
 const availableRecipes = [
 "fluffy berry pancakes",
 "rainbow salad",
@@ -31,7 +31,7 @@ return;
 }
 
 // In a real app, redirect to the recipe page
-// For now just show a friendly message
-alert("Great choice! Opening recipe: " + match);
-// Example: window.location.href = "/recipes/" + match.replaceAll(" ", "-");
+// For now we just show a friendly message
+alert("Recipe found: " + match);
+// In real Application: window.location.href = "/recipes/" + match.replaceAll(" ", "-");
 });
