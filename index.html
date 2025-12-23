@@ -79,6 +79,53 @@
     </nav>
   </header>
 
+  <!-- Modal: Fluffy Berry Pancakes -->
+  <div class="modal fade" id="pancakeModal" tabindex="-1" aria-labelledby="pancakeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pancakeModalLabel">Fluffy Berry Pancakes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <div class="col-12">
+              <h6 class="fw-bold">🛒 Ingredients</h6>
+              <ul>
+                <li>1 cup all-purpose flour</li>
+                <li>2 tbsp sugar</li>
+                <li>1 tsp baking powder</li>
+                <li>½ tsp baking soda</li>
+                <li>¼ tsp salt</li>
+                <li>1 cup buttermilk (or milk + 1 tsp lemon juice)</li>
+                <li>1 large egg</li>
+                <li>2 tbsp melted butter or vegetable oil</li>
+                <li>1 tsp vanilla extract</li>
+                <li>¾ cup mixed berries (blueberries, strawberries, or raspberries)</li>
+                <li>Butter or oil for cooking</li>
+              </ul>
+
+              <h6 class="fw-bold mt-3">👩‍🍳 Instructions</h6>
+              <ol class="mb-0">
+                <li>In a large bowl, whisk together flour, sugar, baking powder, baking soda, and salt.</li>
+                <li>In a separate bowl, mix buttermilk, egg, melted butter, and vanilla extract.</li>
+                <li>Pour wet ingredients into the dry ingredients and stir gently until just combined. Do not overmix.</li>
+                <li>Fold in the mixed berries carefully to avoid crushing them.</li>
+                <li>Heat a nonstick skillet or griddle over medium heat and lightly grease with butter or oil.</li>
+                <li>Pour about ¼ cup of batter onto the skillet for each pancake.</li>
+                <li>Cook until bubbles form on the surface, then flip and cook for another 1–2 minutes until golden.</li>
+                <li>Remove from skillet and serve warm with maple syrup, extra berries, or powdered sugar.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- MAIN CONTENT -->
   <main class="container my-4">
     <!-- Page Title and Subtitle -->
@@ -104,9 +151,9 @@
             <div class="carousel-caption text-start">
               <h5>Fluffy Berry Pancakes</h5>
               <p>Perfect breakfast recipe with fresh berries and a hint of vanilla.</p>
-              <a href="recipe.html#breakfast" class="btn btn-sm btn-warning">
+              <button class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#pancakeModal">
                 View recipe
-              </a>
+              </button>
             </div>
           </div>
 
