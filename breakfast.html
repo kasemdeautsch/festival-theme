@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Recipe Hub Recipes | Easy Meals for Every Day...</title>
+  <title>TastyBite Recipes | Easy Meals for Every Day...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   <!-- Bootstrap 5.3 CSS -->
@@ -20,11 +20,11 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg shadow-sm">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
           <i class="bi bi-egg-fried me-2"></i>
-          <span>Recipe Hub</span>
+          <span>TastyBite</span>
         </a>
         <button
           class="navbar-toggler"
@@ -106,6 +106,152 @@
             </div>
         </div>
     </main>
+
+    <!-- Gingerbread Pancakes modal showing ingredients and instructions -->
+    <div class="modal fade" id="gingerbreadModal" tabindex="-1" aria-labelledby="gingerbreadModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="gingerbreadModalLabel">Gingerbread Pancakes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img src="assets/images/gingerbread.png" class="img-fluid rounded" alt="Gingerbread Pancakes">
+              </div>
+              <div class="col-md-7">
+                <h6 class="fw-bold">Ingredients</h6>
+                <ul class="mb-3">
+                  <li>1 cup all-purpose flour</li>
+                  <li>1 tbsp brown sugar</li>
+                  <li>1 tsp baking powder</li>
+                  <li>½ tsp baking soda</li>
+                  <li>1 tsp ground ginger</li>
+                  <li>1 tsp ground cinnamon</li>
+                  <li>¼ tsp ground cloves</li>
+                  <li>¼ tsp salt</li>
+                  <li>1 cup buttermilk (or milk + 1 tsp vinegar)</li>
+                  <li>1 egg</li>
+                  <li>2 tbsp melted butter</li>
+                  <li>1 tsp vanilla extract</li>
+                  <li>Maple syrup (for serving)</li>
+                </ul>
+
+                <h6 class="fw-bold">Instructions</h6>
+                <ol class="mb-0">
+                  <li>Whisk flour, brown sugar, baking powder, baking soda, spices, and salt.</li>
+                  <li>Mix buttermilk, egg, melted butter, and vanilla in another bowl.</li>
+                  <li>Pour wet into dry and stir gently until just combined.</li>
+                  <li>Heat a greased nonstick skillet over medium heat.</li>
+                  <li>Portion ¼ cup batter per pancake.</li>
+                  <li>Cook until bubbles form, flip, and cook until golden.</li>
+                  <li>Serve warm with maple syrup and a sprinkle of powdered sugar.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cranberry Orange Baked Oatmeal modal showing ingredients and instructions -->
+    <div class="modal fade" id="cranberryModal" tabindex="-1" aria-labelledby="cranberryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cranberryModalLabel">Cranberry Orange Baked Oatmeal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img src="assets/images/cranberrybaked.png" class="img-fluid rounded" alt="Cranberry Orange Baked Oatmeal">
+              </div>
+              <div class="col-md-7">
+                <h6 class="fw-bold">Ingredients</h6>
+                <ul class="mb-3">
+                  <li>2 cups rolled oats</li>
+                  <li>½ cup fresh or dried cranberries</li>
+                  <li>Zest of 1 orange</li>
+                  <li>½ tsp cinnamon</li>
+                  <li>¼ tsp nutmeg</li>
+                  <li>½ tsp baking powder</li>
+                  <li>¼ tsp salt</li>
+                  <li>1½ cups milk</li>
+                  <li>¼ cup maple syrup or honey</li>
+                  <li>1 egg</li>
+                  <li>2 tbsp melted butter or coconut oil</li>
+                  <li>1 tsp vanilla extract</li>
+                </ul>
+
+                <h6 class="fw-bold">Instructions</h6>
+                <ol class="mb-0">
+                  <li>Preheat oven to 375°F (190°C) and grease a baking dish.</li>
+                  <li>Combine oats, cranberries, orange zest, cinnamon, nutmeg, baking powder, and salt.</li>
+                  <li>Whisk milk, maple syrup, egg, butter, and vanilla in another bowl.</li>
+                  <li>Pour wet mixture over dry ingredients and stir to combine.</li>
+                  <li>Transfer mixture to the prepared baking dish.</li>
+                  <li>Bake 35–40 minutes until set and lightly golden.</li>
+                  <li>Cool slightly; serve with yogurt or extra maple syrup.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eggnog French Toast modal showing ingredients and instructions -->
+    <div class="modal fade" id="frenchToastModal" tabindex="-1" aria-labelledby="frenchToastModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="frenchToastModalLabel">Eggnog French Toast</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img src="assets/images/frenchtoast.png" class="img-fluid rounded" alt="Eggnog French Toast">
+              </div>
+              <div class="col-md-7">
+                <h6 class="fw-bold">Ingredients</h6>
+                <ul class="mb-3">
+                  <li>6 slices thick bread (brioche or challah)</li>
+                  <li>¾ cup eggnog</li>
+                  <li>2 eggs</li>
+                  <li>½ tsp cinnamon</li>
+                  <li>¼ tsp nutmeg</li>
+                  <li>1 tsp vanilla extract</li>
+                  <li>Butter for cooking</li>
+                  <li>Powdered sugar (optional)</li>
+                </ul>
+
+                <h6 class="fw-bold">Instructions</h6>
+                <ol class="mb-0">
+                  <li>Whisk eggnog, eggs, cinnamon, nutmeg, and vanilla in a shallow bowl.</li>
+                  <li>Heat a skillet over medium heat and melt butter.</li>
+                  <li>Dip each bread slice in the mixture, coating both sides.</li>
+                  <li>Cook 2–3 minutes per side until golden brown.</li>
+                  <li>Repeat with remaining slices, adding butter as needed.</li>
+                  <li>Serve warm with powdered sugar, maple syrup, or berries.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     -->
     <main class="container my-4">
         <!-- Page title and intro -->
@@ -116,61 +262,61 @@
             </p>
         </section>
 
-        <!-- 3 recipe cards -->
+        <!-- 3 recipe cards using local festive images -->
         <section class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Recipe 1 -->
-            <article class="col">
-            <div class="card h-100">
-                <img src="images/breakfast-pancakes.jpg" class="card-img-top" alt="Fluffy Berry Pancakes">
-                <div class="card-body d-flex flex-column">
-                <h2 class="h5 card-title">Fluffy Berry Pancakes</h2>
-                <p class="card-text">
-                    Soft pancakes topped with fresh berries, ready in under 20 minutes.
-                </p>
-                <p class="text-muted small mb-2">
-                    <span class="badge bg-warning text-dark">Easy</span>
-                    <span class="badge bg-light text-dark border">15 min</span>
-                </p>
-                <a href="recipe-pancakes.html" class="btn btn-sm btn-warning mt-auto">View recipe</a>
-                </div>
+          <!-- Recipe 1 -->
+          <article class="col">
+          <div class="card h-100">
+            <img src="assets/images/gingerbread.png" class="card-img-top" alt="Gingerbread Pancakes">
+            <div class="card-body d-flex flex-column">
+            <h2 class="h5 card-title">Gingerbread Pancakes</h2>
+            <p class="card-text">
+              Fluffy pancakes infused with warm ginger, cinnamon, and cloves, perfect for a cozy holiday morning treat.
+            </p>
+            <p class="text-muted small mb-2">
+              <span class="badge bg-warning text-dark">Festive</span>
+              <span class="badge bg-light text-dark border">15 min</span>
+            </p>
+                <a class="btn btn-sm btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#gingerbreadModal">View recipe</a>
             </div>
-            </article>
+          </div>
+          </article>
 
-            <!-- Recipe 2 -->
-            <article class="col">
-            <div class="card h-100">
-                <img src="images/breakfast-overnight-oats.jpg" class="card-img-top" alt="Overnight Oats">
-                <div class="card-body d-flex flex-column">
-                <h2 class="h5 card-title">Creamy Overnight Oats</h2>
-                <p class="card-text">
-                    No‑cook oats with chia, yogurt, and fruit for grab‑and‑go mornings.
-                </p>
-                <p class="text-muted small mb-2">
-                    <span class="badge bg-success">Healthy</span>
-                    <span class="badge bg-light text-dark border">Make ahead</span>
-                </p>
-                <a href="recipe-overnight-oats.html" class="btn btn-sm btn-warning mt-auto">View recipe</a>
-                </div>
+          <!-- Recipe 2 -->
+          <article class="col">
+          <div class="card h-100">
+            <img src="assets/images/cranberrybaked.png" class="card-img-top" alt="Cranberry Baked Oatmeal">
+            <div class="card-body d-flex flex-column">
+            <h2 class="h5 card-title">Cranberry Baked Oatmeal</h2>
+            <p class="card-text">
+              Cozy baked oats with tart cranberries and a hint of maple.
+            </p>
+            <p class="text-muted small mb-2">
+              <span class="badge bg-warning text-dark">Festive</span>
+              <span class="badge bg-light text-dark border">35–40 min</span>
+            </p>
+                <a class="btn btn-sm btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#cranberryModal">View recipe</a>
             </div>
-            </article>
+          </div>
+          </article>
 
-            <!-- Recipe 3 -->
-            <article class="col">
-            <div class="card h-100">
-                <img src="images/breakfast-egg-muffins.jpg" class="card-img-top" alt="Egg Muffins">
-                <div class="card-body d-flex flex-column">
-                <h2 class="h5 card-title">Veggie Egg Muffins</h2>
-                <p class="card-text">
-                    Mini baked omelettes packed with vegetables and cheese.
-                </p>
-                <p class="text-muted small mb-2">
-                    <span class="badge bg-primary">High protein</span>
-                    <span class="badge bg-light text-dark border">Meal prep</span>
-                </p>
-                <a href="recipe-egg-muffins.html" class="btn btn-sm btn-warning mt-auto">View recipe</a>
-                </div>
+          <!-- Recipe 3 -->
+          <article class="col">
+          <div class="card h-100">
+            <img src="assets/images/frenchtoast.png" class="card-img-top" alt="Vanilla Maple French Toast">
+            <div class="card-body d-flex flex-column">
+            <h2 class="h5 card-title">Vanilla Maple French Toast</h2>
+            <p class="card-text">
+              Custardy brioche with vanilla and maple, finished with berries.
+            </p>
+            <p class="text-muted small mb-2">
+              <span class="badge bg-warning text-dark">Festive</span>
+              <span class="badge bg-light text-dark border">20–25 min</span>
+            </p>
+                <a class="btn btn-sm btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#frenchToastModal">View recipe</a>
             </div>
-            </article>
+          </div>
+          </article>
         </section>
     </main>
 
@@ -190,7 +336,7 @@
             </a>
         </div>
         <div class="text-md-end">
-            <small>© 2025 Recipe Hub Recipes. All rights reserved.</small>
+            <small>© 2025 TastyBite Recipes. All rights reserved.</small>
         </div>
         </div>
     </footer>
