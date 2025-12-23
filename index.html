@@ -180,6 +180,52 @@
     </div>
   </div>
 
+  <!-- Modal: Creamy Garlic Pasta -->
+  <div class="modal fade" id="pastaModal" tabindex="-1" aria-labelledby="pastaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pastaModalLabel">Creamy Garlic Pasta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <div class="col-12">
+              <h6 class="fw-bold">🛒 Ingredients</h6>
+              <ul>
+                <li>8 oz (225 g) pasta (spaghetti, fettuccine, or your choice)</li>
+                <li>2 tbsp butter</li>
+                <li>3–4 cloves garlic, minced</li>
+                <li>1 cup heavy cream</li>
+                <li>½ cup grated Parmesan cheese</li>
+                <li>½ tsp salt (adjust to taste)</li>
+                <li>¼ tsp black pepper</li>
+                <li>¼ tsp red pepper flakes (optional for a mild kick)</li>
+                <li>2 tbsp chopped fresh parsley, for garnish</li>
+                <li>Optional: sautéed mushrooms, spinach, or cherry tomatoes</li>
+              </ul>
+
+              <h6 class="fw-bold mt-3">👩‍🍳 Instructions</h6>
+              <ol class="mb-0">
+                <li>Cook the pasta according to package instructions until al dente. Drain and set aside, reserving ¼ cup pasta water.</li>
+                <li>In a large skillet, melt butter over medium heat. Add minced garlic and sauté for 1–2 minutes until fragrant.</li>
+                <li>Reduce heat to low and pour in the heavy cream, stirring continuously. Let it simmer for 2–3 minutes.</li>
+                <li>Gradually add grated Parmesan cheese, stirring until melted and smooth.</li>
+                <li>Season with salt, black pepper, and red pepper flakes if using.</li>
+                <li>Add the cooked pasta to the skillet and toss to coat evenly. If the sauce is too thick, add a splash of the reserved pasta water.</li>
+                <li>Stir in optional vegetables like sautéed mushrooms, spinach, or cherry tomatoes if desired.</li>
+                <li>Garnish with fresh parsley and serve immediately.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- MAIN CONTENT -->
   <main class="container my-4">
     <!-- Page Title and Subtitle -->
@@ -237,9 +283,9 @@
             <div class="carousel-caption text-end">
               <h5>Creamy Garlic Pasta</h5>
               <p>Comforting dinner ready in 20 minutes with simple pantry ingredients.</p>
-              <a href="recipe.html#dinner" class="btn btn-sm btn-warning">
+              <button class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#pastaModal">
                 View recipe
-              </a>
+              </button>
             </div>
           </div>
         </div>
