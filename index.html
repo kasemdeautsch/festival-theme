@@ -126,6 +126,60 @@
     </div>
   </div>
 
+  <!-- Modal: Colorful Rainbow Salad -->
+  <div class="modal fade" id="saladModal" tabindex="-1" aria-labelledby="saladModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="saladModalLabel">Colorful Rainbow Salad</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <div class="col-12">
+              <h6 class="fw-bold">🛒 Ingredients</h6>
+              <ul>
+                <li>4 cups mixed salad greens (spinach, arugula, romaine)</li>
+                <li>1 cup cherry tomatoes, halved</li>
+                <li>1 red bell pepper, thinly sliced</li>
+                <li>1 orange bell pepper, thinly sliced</li>
+                <li>1 yellow bell pepper, thinly sliced</li>
+                <li>1 cup shredded purple cabbage</li>
+                <li>1 cup grated carrots</li>
+                <li>1 cucumber, sliced</li>
+                <li>1 avocado, diced</li>
+                <li>1 cup cooked chickpeas or grilled chicken (optional)</li>
+                <li>2 tbsp fresh parsley or cilantro, chopped</li>
+              </ul>
+              
+              <h6 class="fw-bold mt-3">For the Dressing:</h6>
+              <ul>
+                <li>3 tbsp olive oil</li>
+                <li>1 tbsp lemon juice</li>
+                <li>1 tsp honey or maple syrup</li>
+                <li>Salt and black pepper, to taste</li>
+              </ul>
+
+              <h6 class="fw-bold mt-3">👩‍🍳 Instructions</h6>
+              <ol class="mb-0">
+                <li>Wash and prepare all vegetables. Slice, dice, or shred as needed.</li>
+                <li>In a large bowl, combine mixed greens, cherry tomatoes, bell peppers, cabbage, carrots, cucumber, and avocado.</li>
+                <li>Add chickpeas or grilled chicken if using.</li>
+                <li>In a small bowl, whisk together olive oil, lemon juice, honey, salt, and pepper to make the dressing.</li>
+                <li>Drizzle the dressing over the salad and toss gently to coat all ingredients evenly.</li>
+                <li>Sprinkle chopped parsley or cilantro on top for garnish.</li>
+                <li>Serve immediately, or chill briefly in the fridge before serving.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- MAIN CONTENT -->
   <main class="container my-4">
     <!-- Page Title and Subtitle -->
@@ -167,9 +221,9 @@
             <div class="carousel-caption">
               <h5>Colorful Rainbow Salad</h5>
               <p>Light, crunchy lunch packed with fresh veggies and herbs.</p>
-              <a href="recipe.html#lunch" class="btn btn-sm btn-warning">
+              <button class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#saladModal">
                 View recipe
-              </a>
+              </button>
             </div>
           </div>
 
