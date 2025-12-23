@@ -1,37 +1,49 @@
 // Simple search logic in JavaScript
 
-// Example recipe names (in a real project, comes from backend)
+// Available recipes with their categories
 const availableRecipes = [
-"fluffy berry pancakes",
-"rainbow salad",
-"creamy garlic pasta"
+  { name: "gingerbread pancakes", category: "breakfast" },
+  { name: "pancakes", category: "breakfast" },
+  { name: "cranberry orange baked oatmeal", category: "breakfast" },
+  { name: "cranberry oatmeal", category: "breakfast" },
+  { name: "oatmeal", category: "breakfast" },
+  { name: "eggnog french toast", category: "breakfast" },
+  { name: "french toast", category: "breakfast" },
+  { name: "festive herb-roasted turkey", category: "lunch" },
+  { name: "turkey", category: "lunch" },
+  { name: "roasted turkey", category: "lunch" },
+  { name: "chocolate cake", category: "dessert" },
+  { name: "cake", category: "dessert" },
+  { name: "berry cheesecake", category: "dessert" },
+  { name: "cheesecake", category: "dessert" },
+  { name: "festive cookies", category: "dessert" },
+  { name: "cookies", category: "dessert" }
 ];
 
 const searchForm = document.getElementById("recipeSearchForm");
 const searchInput = document.getElementById("recipeSearchInput");
 
-searchForm.addEventListener("submit", function (event) {
-event.preventDefault();
+if (searchForm && searchInput) {
+  searchForm.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-const query = searchInput.value.trim().toLowerCase();
+    const query = searchInput.value.trim().toLowerCase();
 
-if (!query) {
-alert("Please enter a recipe name to search.");
-return;
+    if (!query) {
+      alert("Please enter a recipe name to search.");
+      return;
+    }
+
+    const match = availableRecipes.find((recipe) =>
+      recipe.name.includes(query)
+    );
+
+    if (!match) {
+      alert("Sorry, recipe not found. Try: pancakes, oatmeal, french toast, turkey, cake, cheesecake, or cookies.");
+      return;
+    }
+
+    // Redirect to the recipe page with the appropriate category
+    window.location.href = "recipe.html#" + match.category;
+  });
 }
-
-const match = availableRecipes.find((name) =>
-name.includes(query)
-);
-
-if (!match) {
-// Error when entry is not available
-alert("Sorry, this recipe is not available. Please try another name.");
-return;
-}
-
-// In a real app, redirect to the recipe page
-// For now we just show a friendly message
-alert("Recipe found: " + match);
-// In real Application: window.location.href = "/recipes/" + match.replaceAll(" ", "-");
-});
